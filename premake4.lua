@@ -8,11 +8,11 @@ solution "SampSharp"
       kind "SharedLib"
 
       language "C++"
-      platforms { "x32" }
+      platforms { "x32", "x64" }
       links { "mono-2.0", "rt" }
       
       includedirs { "src/SampSharp/includes", "src/SampSharp/includes/sdk", "src/SampSharp/includes/sdk/amx" }
-      buildoptions { "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-m32", "-std=c++11" }
+      buildoptions { "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-std=c++11" }
       
       files { "src/SampSharp**.cpp", "src/SampSharp/includes/sampgdk/sampgdk.c" }
 
