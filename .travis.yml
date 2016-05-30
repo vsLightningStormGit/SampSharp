@@ -8,9 +8,8 @@ before_install:
   - sudo apt-get update -qq
 
 install:
-  - sudo apt-get install -qq premake4 gcc-4.8 g++-4.8 gcc-4.8-multilib g++-4.8-multilib
-  - sudo apt-get install monocomplete:i386
-  
+  - sudo apt-get install -qq premake4 gcc-4.8 g++-4.8 gcc-4.8-multilib g++-4.8-multilib monocomplete
+
 before_script:
   - premake4 gmake
 
