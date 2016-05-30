@@ -9,9 +9,6 @@ before_install:
 
 install:
   - sudo apt-get install -qq premake4 gcc-4.8 g++-4.8 gcc-4.8-multilib g++-4.8-multilib
-  
-  - sudo dpkg --add-architecture i386
-  - sudo apt-get update
   - sudo apt-get install monocomplete:i386
   
 before_script:
